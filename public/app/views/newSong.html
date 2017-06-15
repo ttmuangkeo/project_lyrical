@@ -1,0 +1,25 @@
+    <section id="newsletter">
+      <div class="container">
+        <h1>Search for Songs</h1>
+      </div>
+    </section>
+        <form ng-submit="search()">
+          <input type="text" ng-model='artist' placeholder="Enter Artist">
+          <input type="text" ng-model='title' placeholder="Enter Song">
+          <button type="submit" class="btn btn-info">Search</button>
+        </form>
+
+      
+        <div class="container">
+            <div class="col-md-12">
+              <div ng-repeat="test in test">
+              <div class="col-md-4">
+
+              <h4><span class="blue-text">{{test.trackName}}</span> by {{test.artistName}}</h4> 
+              <img src="{{test.artworkUrl100}}" alt="artworkUrl60">
+              <a target="__blank" href="{{test.previewUrl}}">Preview</a>            
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>

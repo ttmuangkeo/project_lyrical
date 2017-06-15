@@ -1,0 +1,22 @@
+<form ng-submit="search()">
+    <input type="text" ng-model='artist' placeholder="Enter Artist Name...">
+    <button type="submit" class="btn btn-info">Search</button>
+</form>
+
+
+<div class="container">
+    <div class="row-fluid">
+        <div class="col-md-6" ng-repeat="test in test">
+            <div class="col-md-6">
+                <a href="/newsong">
+                    <h3>{{test.collectionName}}</h3>
+                    <h4>Track Count: {{test.trackCount}}</h4>
+                    <a href="{{test.trackViewUrl}}">iTunes</a>
+                    <h4>{{test.trackName}}</h4>
+                </div>
+                <img ng-src="{{test.artworkUrl100}}" alt="artwork">
+            </a>
+        </div>
+    </div>
+</div>
+</div>
