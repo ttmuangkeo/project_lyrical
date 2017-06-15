@@ -10,9 +10,9 @@
             <div id="albumborder" class="col-md-12">
               <div ng-repeat="test in test">
               <div id="albuminfo" class="col-md-6">
+              <img class="img-responsive right" ng-src="{{test.artworkUrl100}}" alt="">
               <h4><span class="text-danger">{{test.artistName}}</span> - {{test.trackName}}</h4>
               <h4 class="text-info">{{test.collectionName}}</h4>
-              <img class="img-responsive" ng-src="{{test.artworkUrl100}}" alt="">
               <h5><a href="{{test.previewUrl}}">Preview</a></h5>
               <h5><a href="{{test.trackViewUrl}}">iTunes</a></h5>
               </div>
