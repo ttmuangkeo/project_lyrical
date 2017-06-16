@@ -17,7 +17,8 @@ Team Members: Emmeline Aquino and Tim Tmuangkeo
 
 
 ## WIREFRAME
-
+![project4-wireframe](https://user-images.githubusercontent.com/26496932/27207328-d5b3da6e-51f2-11e7-8cc6-bcbe5d359213.jpg)
+![project4-issuelog](https://user-images.githubusercontent.com/26496932/27207329-d749265e-51f2-11e7-8556-966582182e6b.jpg)
 
 ----------------------------------------------------------------------------------------------------------------------
 ### WINS!!
