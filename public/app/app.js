@@ -1,4 +1,5 @@
-var app = angular.module('App', ['ui.router', 'myCtrls']);
+var app = angular.module('App', ['ui.router', 'ui.bootstrap', 'myCtrls']);
+
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/404');
@@ -7,6 +8,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             .state('home', {
                 url: '/',
                 templateUrl: 'app/views/home.html',
+                
             })
             .state('newArtist', {
                 url: '/newartist',
@@ -21,7 +23,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             .state('newSong', {
                 url: '/newsong',
                 templateUrl: 'app/views/newSong.html',
-                controller: 'HomeCtrl'
+                controller: 'songCtrl'
             })
             .state('lyrics', {
                 url: '/lyrics',
@@ -37,6 +39,11 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                 url: '/showartist',
                 templateUrl: 'app/views/showArtist.html',
                 controller: 'showArtistCtrl'
+            })
+            .state('showvideo', {
+                url: '/showvideo',
+                templateUrl: 'app/views/showVideo.html',
+                controller: 'videoCtrl'
             })
 
         $locationProvider.html5Mode(true);

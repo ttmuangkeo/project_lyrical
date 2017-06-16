@@ -1,27 +1,42 @@
 
 
-    <section id="newsletter">
-      <div class="container">
-        <h1>Search for music video</h1>
-      </div>
-    </section>
-        <form ng-submit="search()">
-          <input type="text" ng-model='artist' placeholder="Enter Artist Name...">
-          <button type="submit" class="btn btn-info">Search</button>
-        </form>
-
-      
-        <div class="container">
+<section id="artistbg">
+    <div class="container">
         <div class="row-fluid">
             <div class="col-md-12">
-              <div ng-repeat="test in test">
-              <div class="col-md-4">
-              <a target="__blank" href="{{test.previewUrl}}">
-              <p>{{test.trackName}} - {{test.artistName}}</p>
-              <img class="img-responsive" src="{{test.artworkUrl100}}" alt="artwork">
-              </a>
-              </div>
-              </div>
+                <h1>Music Video</h1>
             </div>
-          </div>
         </div>
+    </div>
+    <div class="container">
+        <form ng-submit="search()" class="text-center">
+            <input class="form-control text-center" ng-model="artist" type="text" placeholder="Search song title or artist">
+            <br>
+            <button type="submit" class="btn button_1 btn-lg">Search</button>
+        </form>
+    </div>
+</section>
+
+
+
+<div class="container">
+    <div class="row">
+        <hr>
+        <div ng-repeat="test in test">
+            <div id="content" class="col-md-6">
+                <img class="artwork" ng-src="{{test.artworkUrl100}}">
+                <h4 class="text-danger">{{test.trackName}}<span class="text-info"> by {{test.artistName}}</span></h4>
+                <a target="__blank" href="{{test.previewUrl}}" class="glyphicon glyphicon-play btn btn-lg button_1">PlayVideo</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

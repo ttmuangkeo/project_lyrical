@@ -79,6 +79,13 @@ header a:hover{
   font-weight:bold;
 }
 
+.artwork {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
 /* Showcase */
 #showcase{
   min-height:534px;
@@ -114,12 +121,15 @@ header a:hover{
   background:#35424a
 }
 
-/*#albumborder{
-  border: 3px solid orange;
-}*/
 #albuminfo {
 border: 1px solid orange;
   background-color: #dddbcb;
+  border-radius: 10px;
+}
+
+#content {
+border: 1px solid orange;
+  background-color: rgb(53, 66, 71);
   border-radius: 10px;
 }
 

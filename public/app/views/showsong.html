@@ -1,22 +1,21 @@
-
-
-    <section id="newsletter">
-      <div class="container">
-      </div>
-    </section>
-        <div class="container-fluid">
-        <div class="row">
-        <h1 class="text-center">Songs</h1>
-            <div id="albumborder" class="col-md-12">
-              <div ng-repeat="test in test">
-              <div id="albuminfo" class="col-md-6">
-              <img class="img-responsive right" ng-src="{{test.artworkUrl100}}" alt="">
-              <h4><span class="text-danger">{{test.artistName}}</span> - {{test.trackName}}</h4>
-              <h4 class="text-info">{{test.collectionName}}</h4>
-              <h5><a href="{{test.previewUrl}}">Preview</a></h5>
-              <h5><a href="{{test.trackViewUrl}}">iTunes</a></h5>
-              </div>
-              </div>
+<section id="artistbg">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="col-md-12">
+                <h1>Song</h1>
             </div>
-          </div>
         </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <hr>
+        <div ng-repeat="test in test">
+            <div id="content" class="col-md-4">
+                <h4><span class="text-info">{{test.trackName}}</span> <span class="text-danger"> by {{test.artistName}}</span></h4>
+                <img src="{{test.artworkUrl60}}" alt="">
+                <a href="{{test.previewUrl}}" class="glyphicon glyphicon-play btn button_1">PlaySong</a>
+            </div>
+        </div>
+    </div>
+</div>

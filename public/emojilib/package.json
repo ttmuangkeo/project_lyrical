@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "emojilib",
+        "scope": null,
+        "escapedName": "emojilib",
+        "name": "emojilib",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/Tim/wdi/project/u1-project-4/project-lyrical"
+    ]
+  ],
+  "_from": "emojilib@latest",
+  "_id": "emojilib@2.2.5",
+  "_inCache": true,
+  "_location": "/emojilib",
+  "_nodeVersion": "6.2.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/emojilib-2.2.5.tgz_1497487546188_0.820957028772682"
+  },
+  "_npmUser": {
+    "name": "muan",
+    "email": "me@muanchiou.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "emojilib",
+    "scope": null,
+    "escapedName": "emojilib",
+    "name": "emojilib",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/emojilib/-/emojilib-2.2.5.tgz",
+  "_shasum": "239a1f395a8eb1738e46afe0dceb4737d4606081",
+  "_shrinkwrap": null,
+  "_spec": "emojilib",
+  "_where": "/Users/Tim/wdi/project/u1-project-4/project-lyrical",
+  "author": {
+    "name": "Mu-An Chiou",
+    "email": "me@muanchiou.com"
+  },
+  "bugs": {
+    "url": "https://github.com/muan/emojilib/issues"
+  },
+  "dependencies": {},
+  "description": "Emoji keyword library.",
+  "devDependencies": {
+    "JSONStream": "^1.0.4",
+    "format-json-stream": "^0.1.5",
+    "phantomjs": "^1.9.17"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "239a1f395a8eb1738e46afe0dceb4737d4606081",
+    "tarball": "https://registry.npmjs.org/emojilib/-/emojilib-2.2.5.tgz"
+  },
+  "files": [
+    "emojis.json",
+    "index.js",
+    "ordered.json",
+    "LICENSE",
+    "package.json"
+  ],
+  "gitHead": "13955f4c0f2a06c18188c846dcd0319cc21aedf8",
+  "homepage": "https://github.com/muan/emojilib#readme",
+  "keywords": [
+    "emoji",
+    "keyword",
+    "search"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "muan",
+      "email": "me@muanchiou.com"
+    }
+  ],
+  "name": "emojilib",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muan/emojilib.git"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "prepublish": "npm run build",
+    "test": "phantomjs test.js"
+  },
+  "version": "2.2.5"
+}
