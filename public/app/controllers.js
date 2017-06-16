@@ -45,6 +45,10 @@ angular.module('myCtrls', ['somethingServices'])
     };
 }])
 .controller('lyricsCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.message =        
+        "Animals: :dog: :cat: :snake:",
+        "People: :smile: :confused: :angry:",
+        "Places: :house: :school: :hotel:"
     $scope.search = function() {
 
         $http({
