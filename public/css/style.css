@@ -14,11 +14,30 @@ body {
     overflow: hidden;
 }
 
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  /*min-width: 200px;*/
+  /*max-width: 400px;*/
+  
+}
+
 ul {
     margin: 0;
     padding: 0;
 }
 
+#title {
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
 .button_1 {
     height: 38px;
     background: #e8491d;
@@ -78,6 +97,10 @@ header .current a {
     color: #e8491d;
     font-weight: bold;
 }
+.highlight {
+    color: #e8491d;
+    font-weight: bold;
+}
 
 header a:hover {
     color: #cccccc;
@@ -96,7 +119,6 @@ header a:hover {
 
 #showcase {
     min-height: 534px;
-    background-image: url('../img/rockband.png');
     text-align: center;
     background-position: 20%;
     color: #ffffff;
@@ -116,6 +138,7 @@ header a:hover {
     margin-top: 100px;
     font-size: 55px;
     margin-bottom: 10px;
+    color: black
 }
 
 #showcase p {
@@ -163,7 +186,7 @@ header a:hover {
 
 #boxes {
     margin-top: 20px;
-    height: 300px;
+    height: 325px;
 }
 
 #boxes .box {
