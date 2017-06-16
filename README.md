@@ -10,10 +10,11 @@ Team Members: Emmeline Aquino and Tim Tmuangkeo
 * MEAN Stack - Mongo, Express, Angular, Nodejs
 * HTML5/CSS3
 * Bootstrap - Angular
-
+* Chrome Plugin - 'Allow Control / Allow Origin' --NEED THIS PLUGIN TO VIEW LYRICS
+Install : https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
 
 ### DEPLOYED ON HEROKU
-
+https://lyricalsearch.herokuapp.com/
 
 
 ## WIREFRAME
