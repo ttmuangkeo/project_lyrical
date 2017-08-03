@@ -8,7 +8,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
             .state('home', {
                 url: '/',
                 templateUrl: 'app/views/home.html',
-                
             })
             .state('newArtist', {
                 url: '/newartist',
