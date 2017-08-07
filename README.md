@@ -1,12 +1,12 @@
 ## PROJECT #4 - Lyrical Music Search
 Team Members: Emmeline Aquino and Tim Tmuangkeo
-<img src="img/home.jpg" alt="">
+<img src="public/img/home.jpg" alt="">
 
 ## USER STORIES
 1). User wants to search for a specific artist or song.
 2). User wants to translate song lyrics to emojis.
 
-<img src="img/lyrics.jpg" alt="">
+<img src="public/img/lyrics.jpg" alt="">
 
 
 ## TECHNOLOGIES USED:
