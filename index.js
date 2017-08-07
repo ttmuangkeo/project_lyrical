@@ -2,27 +2,15 @@ require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
-var emoji = require('emojilib')
-
-// // JSON web token dependencies, including a secret key to sign the token
-// var expressJWT = require('express-jwt');
-// var jwt = require('jsonwebtoken');
-// var secret = process.env.JWT_SECRET;
-// var spotifyApi = new SpotifyWebApi();
-
+var translate = require('moji-translate');
 var app = express();
-
-// // mongoose models and connection
-// var mongoose = require('mongoose');
-// var Favorite = require('./models/favorite');
-// mongoose.connect('mongodb://localhost/lyrical'); //connect to your database name
-
-// // decode POST data in JSON and URL encoded formats
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(require('morgan')('dev'));
 
+app.get('/api/emoji', function(req, res) {
+	res.send(translate.translate(req.query.searchTerm));
+});
 
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/index.html'));
