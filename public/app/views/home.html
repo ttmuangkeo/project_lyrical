@@ -1,11 +1,10 @@
- <div class="homepage-hero-module">
-        <div class="video-container">
-            
-            <video autoplay loop class="fillWidth">
-                <source src="../video/MP4/Cheer-Up.mp4" type="video/mp4">
-            </video>
-            </div>
-        </div>
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <video autoplay loop class="fillWidth">
+            <source src="../video/MP4/Cheer-Up.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
 <section>
     <div class="container">
         <div class="row-fluid">
@@ -14,15 +13,41 @@
                     <h1 id="title" class="text-center">Let <span class="highlight">Lyrical</span> bring your <br>favorite Music Artist to life <hr>
                     <span class="lead">Search for your Favorite Music, Artist and Songs</span></h1>
                 </div>
+                <div class="container">
+                    <form ng-submit="search()" class="text-center">
+                        <input class="form-control" type="text" ng-model='artist' placeholder="Enter Artist Name">
+                        <br>
+                        <input class="form-control" type="text" ng-model='title' placeholder="Enter Song Title">
+                        <br>
+                        <button type='submit' class="btn button_1 btn-lg">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="{{songInfo.trackViewUrl}}">
+                <h3>{{songInfo.collectionName}}</h3>
+                <h4>{{songInfo.artistName}}</h4>
+                <img class="artwork" ng-src="{{songInfo.artworkUrl100}}">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="lead">{{lyrics.lyrics_body}}</blockquote>
+        </div>
+        <div class="col-md-4">
+            <blockquote class="lead">{{emoji}}</blockquote>
+        </div>
+    </div>
+</div>
 <section id="boxes">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <a href="/showvideo">
+                <a id="music" href="/showvideo">
                     <h3 class="text-center button_1">Music Video</h3>
                     <img class="img-responsive" src="./img/radioman.jpg">
                 </a>
@@ -42,6 +67,3 @@
         </div>
     </div>
 </section>
-
-
-
